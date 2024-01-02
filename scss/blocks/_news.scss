@@ -1,0 +1,272 @@
+.news {
+    padding-top: 120px;
+
+    @include media900 {
+        padding-top: 60px;
+    }
+}
+
+.news__title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 55px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        width: 110px;
+        height: 2px;
+        background: $aqua;
+        transform: translate(-50%, 15px);
+    }
+}
+
+.news__inner {
+    display: grid;
+    grid-template-columns: 770px 370px;
+    gap: 27px 30px;
+
+    @include media1200 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 685px 329px;
+        justify-content: center;
+    }
+
+    @include media900 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.news__big-content {
+    padding: 15px 40px 45px;
+
+    @include media900 {
+        padding: 10px 20px 20px;
+    }
+}
+
+.news__big {
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-width: 770px;
+
+    &:hover {
+        box-shadow: 0px 4px 30px 0px rgba(22, 49, 82, 0.12);
+    }
+
+    @include media1200 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+
+
+    @include media900 {
+        max-width: 370px;
+    }
+}
+
+
+.news__big-subtitle {
+    color: $bluew;
+    opacity: .5;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    @include media900 {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+.news__big-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+
+
+    @include media900 {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+.news_big-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $bluew;
+    margin-bottom: 30px;
+
+    @include media900 {
+        font-size: 14px;
+        color: $bluew;
+        margin-bottom: 20px;
+        line-height: normal;
+    }
+
+}
+
+.news__big-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__big-avtor {
+    display: flex;
+
+}
+
+.news__big-avtor--img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    @include media900 {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
+
+.news__big-avtor--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 6px;
+
+    @include media900 {
+        row-gap: 5px;
+    }
+}
+
+.news__big-info--name {
+    color: $bluew;
+    font-size: 16px;
+    font-weight: 600;
+
+    @include media900 {
+        font-size: 12px;
+    }
+}
+
+.news__big-info--date {
+    color: $bluew;
+    opacity: .5;
+    letter-spacing: 0.64px;
+
+    @include media900 {
+        font-size: 12px;
+    }
+}
+
+.news__big-avtor-link {
+
+    margin-right: 40px;
+
+    @include media900 {
+        width: 17px;
+        height: 17px;
+        margin: 0;
+    }
+}
+
+.news__small {
+    max-width: 370px;
+
+
+    &:hover {
+        box-shadow: 0px 4px 30px 0px rgba(22, 49, 82, 0.12);
+    }
+
+    @include media1200 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    @include media900 {
+        max-width: 370px;
+    }
+}
+
+.news__small-content {
+    padding: 10px 20px 20px;
+}
+
+.news__small-img {
+
+    @include media900 {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.news__small-subtitle {
+    font-size: 12px;
+    color: $bluew;
+    opacity: .5;
+    font-weight: 600;
+}
+
+.news__small-title {
+    font-weight: 600;
+}
+
+.news__small-text {
+    font-size: 14px;
+    color: $bluew;
+    margin-bottom: 20px;
+}
+
+.news__small-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__small-avtor {
+    display: flex;
+
+}
+
+.news__small-avtor--img {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.news__small-avtor--info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.news__small-info--name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.news__small-info--date {
+    font-size: 12px;
+    color: $bluew;
+    opacity: .5;
+}
+
+.news__small-avtor-link {
+    width: 17px;
+    height: 17px;
+}

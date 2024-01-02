@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="libs/youtubeLightbox/youtubeLightbox.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>yacht club</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="nav__inner">
+                    <button class="header__burger-btn" id="burger">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <a href="index.html" class="logo">
+                        <img src="./images/header/logo.svg" alt="logo">
+                    </a>
+                    <nav class="nav__content">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Наш клуб</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Регаты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#team" class="nav__item-link">Команда</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Обучение</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="news.html" class="nav__item-link">новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contmap" class="nav__item-link">Контакты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.9845 5.83049e-06C14.3421 0.00315106 10.7864 1.1126 7.78712 3.1818C4.78781 5.25099 2.48602 8.18255 1.18585 11.5892C-0.114323 14.9959 -0.351705 18.7173 0.505066 22.2619C1.36184 25.8064 3.27244 29.0074 5.98448 31.4418L6.24698 31.6671L6.38948 31.7722C6.71198 32.0501 7.04198 32.3129 7.38698 32.5607L7.66448 32.7635C8.02448 33.0188 8.41448 33.2591 8.78198 33.5144L8.96948 33.627C9.38948 33.8748 9.81698 34.1001 10.252 34.3104C11.1983 34.7588 12.1821 35.1231 13.192 35.3993H13.2445C13.7245 35.5344 14.212 35.6471 14.7445 35.7372H14.8795C15.3595 35.8198 15.8395 35.8874 16.3345 35.9324H16.4995C16.9945 35.9775 17.497 36 17.9995 36C18.502 36 19.0045 36 19.4995 35.9324H19.6645C20.1595 35.8874 20.6395 35.8198 21.1195 35.7372H21.2545C21.7495 35.6471 22.2445 35.5344 22.7545 35.3993H22.807C23.8169 35.1231 24.8007 34.7588 25.747 34.3104C26.182 34.1001 26.6095 33.8673 27.0295 33.627L27.217 33.5144C27.5995 33.2891 27.967 33.0413 28.3345 32.7635L28.612 32.5607C28.957 32.3129 29.287 32.0501 29.6095 31.7722L29.752 31.6671L30.0145 31.4418C32.7284 29.0057 34.6398 25.802 35.4957 22.2546C36.3516 18.7071 36.1117 14.9831 34.8078 11.5752C33.5038 8.16722 31.1973 5.23592 28.1933 3.16903C25.1893 1.10214 21.6294 -0.00292898 17.9845 5.83049e-06ZM17.9845 18.0225C16.7978 18.0225 15.6378 17.6702 14.6511 17.0101C13.6644 16.35 12.8953 15.4117 12.4412 14.314C11.9871 13.2163 11.8683 12.0084 12.0998 10.843C12.3313 9.67767 12.9027 8.60724 13.7418 7.76707C14.581 6.92691 15.6501 6.35475 16.8139 6.12295C17.9778 5.89115 19.1842 6.01012 20.2806 6.46481C21.3769 6.9195 22.314 7.6895 22.9733 8.67743C23.6326 9.66536 23.9845 10.8268 23.9845 12.015C23.9845 13.6083 23.3523 15.1363 22.2271 16.263C21.1019 17.3896 19.5758 18.0225 17.9845 18.0225ZM20.2345 19.5244C22.4225 19.5244 24.5209 20.3947 26.0681 21.9438C27.6153 23.4929 28.4845 25.594 28.4845 27.7847V30.7885L28.387 30.8636C28.0945 31.1039 27.787 31.3367 27.4795 31.5544L27.2695 31.6971C26.9395 31.9299 26.5945 32.1402 26.242 32.3429L26.047 32.4556C25.6795 32.6658 25.297 32.8611 24.9295 33.0338L24.8095 33.0413C23.5594 33.6064 22.2445 34.0149 20.8945 34.2578H20.767C20.347 34.3329 19.912 34.3855 19.4845 34.4305H19.3045C18.862 34.4305 18.427 34.4906 17.9845 34.4906C17.542 34.4906 17.107 34.4906 16.6645 34.4305H16.4845C16.057 34.4305 15.622 34.3404 15.202 34.2653H15.0745C13.7255 34.0244 12.4125 33.6131 11.167 33.0413H11.0395C10.6645 32.8611 10.2895 32.6733 9.92198 32.4631L9.73448 32.2904C9.38198 32.0876 9.03698 31.8773 8.70698 31.6446L8.48948 31.5394C8.18198 31.3141 7.87448 31.0889 7.58198 30.8486L7.48448 30.7885V27.7847C7.48448 25.594 8.35367 23.4929 9.90085 21.9438C11.448 20.3947 13.5464 19.5244 15.7345 19.5244H20.2345ZM29.9845 29.3467V27.7847C29.9856 25.5364 29.2116 23.3565 27.7932 21.6134C26.3748 19.8703 24.399 18.6709 22.1995 18.2178C23.5262 17.3152 24.529 16.0105 25.0606 14.4952C25.5922 12.9799 25.6246 11.3339 25.153 9.79878C24.6815 8.26371 23.7308 6.92045 22.4405 5.96623C21.1503 5.01201 19.5885 4.4971 17.9845 4.4971C16.3804 4.4971 14.8186 5.01201 13.5284 5.96623C12.2382 6.92045 11.2875 8.26371 10.8159 9.79878C10.3443 11.3339 10.3767 12.9799 10.9083 14.4952C11.4399 16.0105 12.4427 17.3152 13.7695 18.2178C11.57 18.6709 9.59413 19.8703 8.17572 21.6134C6.75732 23.3565 5.98331 25.5364 5.98448 27.7847V29.3467C3.77256 26.9999 2.29544 24.056 1.73547 20.8783C1.1755 17.7007 1.55719 14.4283 2.83343 11.4654C4.10968 8.50242 6.22459 5.97853 8.91708 4.20529C11.6096 2.43206 14.7617 1.48711 17.9845 1.48711C21.2072 1.48711 24.3594 2.43206 27.0519 4.20529C29.7444 5.97853 31.8593 8.50242 33.1355 11.4654C34.4118 14.4283 34.7935 17.7007 34.2335 20.8783C33.6735 24.056 32.1964 26.9999 29.9845 29.3467Z"
+                                            fill="#163152" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+            <section class="top none1">
+                <div class="container">
+                    <div class="top__tittle">
+                        <div class="top__top-text">ПОД ПАРУСОМ</div>
+                        <div class="top__bot-text">ВМЕСТЕ</div>
+                    </div>
+                    <div class="top__inner">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/top/slider1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/top/slider2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/top/slider1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/top/slider2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="98" height="76" viewBox="0 0 98 76"
+                                    fill="none">
+                                    <rect width="98" height="76" fill="#FDFDFF" />
+                                    <path d="M42 47L56 38L42 29" stroke="#163152" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="98" height="76" viewBox="0 0 98 76"
+                                    fill="none">
+                                    <rect width="98" height="76" fill="#FDFDFF" />
+                                    <path d="M56 29L42 38L56 47" stroke="#163152" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="top__right-links">
+
+                            <a href="#" class="top__right-link">членство</a>
+                            <a href="#" class="top__right-link">прогулки</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="team none1" id="team">
+                <div class="container">
+                    <div class="team__content">
+                        <div class="team__content-item">
+                            <div class="team__text-block">
+                                <p class="team__text-date">20 октября - 19 апреля</p>
+                                <h1 class="team__text-title title">Стань частью команды</h1>
+                                <p class="team__text-paragraph">Хотите попробовать себя в яхтинге?
+                                    Наш клуб готов стать их воротами
+                                    в морскую культуру!</p>
+                            </div>
+                            <a href="#" class="team__img-box">
+                                <svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="29" cy="29" r="28.5" stroke="#163152" />
+                                    <path d="M17 29H41M41 29L34.6842 23M41 29L34.6842 35" stroke="#163152" />
+                                </svg>
+
+                                <img src="./images/team/im1.jpg" alt="">
+
+                            </a>
+                        </div>
+                        <div class="team__content-item team__content-item2">
+                            <div class="team__text-block team__text-block2">
+                                <p class="team__text-date">26 октября - 31 марта</p>
+                                <h1 class="team__text-title team__text-title2 title">Рожденные в воде</h1>
+                                <p class="team__text-paragraph">Подарите вашим детям чувство свободы, независимости, а
+                                    также вкус жизни. Мир ярких эмоций и неописуемых ощущений! </p>
+                            </div>
+                            <a href="#" class="team__img-box">
+                                <svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="29" cy="29" r="28.5" stroke="#163152" />
+                                    <path d="M17 29H41M41 29L34.6842 23M41 29L34.6842 35" stroke="#163152" />
+                                </svg>
+
+                                <img src="./images/team/im2.jpg" class="team__img-reverse" alt="">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rent none1" id="rent">
+                <div class="container">
+                    <div class="rent__inner">
+                        <h1 class="rent__title title">Аренда яхты</h1>
+                        <ul class="rent__list">
+                            <li class="rent__list-item">
+                                <a href="#" class="rent__item-link">
+                                    <h1 class="rent__item-title">Катер Meridian 401</h1>
+                                    <img class="rent__item-img" src="./images/rent/rent1.jpg" alt="">
+                                    <p class="rent__item-text">Яхта 401 длиной 12.5 метров и шириной 4.2 метра,
+                                        вместимостью
+                                        11 человек</p>
+                                    <ul class="rent__item-list">
+                                        <li class="rent__item-point">2 каюты</li>
+                                        <li class="rent__item-point">4 спальных места</li>
+                                        <li class="rent__item-point">аудиосистема, кондиционер</li>
+                                        <li class="rent__item-point">холодильник, микроволновка</li>
+                                        <li class="rent__item-point">душ, туалет</li>
+                                    </ul>
+                                    <div class="rent__item-price">
+                                        <p class="rent__item-price--word">Цена:</p>
+                                        <p class="rent__item-price--time">14 000 ₽/час</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="rent__list-item">
+                                <a href="#" class="rent__item-link">
+                                    <h1 class="rent__item-title">Катер 60 Manhattan</h1>
+                                    <img class="rent__item-img" src="./images/rent/rent2.jpg" alt="">
+                                    <p class="rent__item-text">Двухпалубное судно VIP уровня длиной 20 метров,
+                                        вместимостью
+                                        10 человек</p>
+                                    <ul class="rent__item-list">
+                                        <li class="rent__item-point">6 кают</li>
+                                        <li class="rent__item-point">носовая часть с огромной подушкой</li>
+                                        <li class="rent__item-point">просторный флайбридж</li>
+                                        <li class="rent__item-point">оборудованная кухня</li>
+                                        <li class="rent__item-point">джакузи </li>
+                                    </ul>
+                                    <div class="rent__item-price">
+                                        <p class="rent__item-price--word">Цена:</p>
+                                        <p class="rent__item-price--time">25 000 ₽/час</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="rent__list-item">
+                                <a href="#" class="rent__item-link">
+                                    <h1 class="rent__item-title">Катер Starfisher 34</h1>
+                                    <img class="rent__item-img" src="./images/rent/rent3.jpg" alt="">
+                                    <p class="rent__item-text">Моторная яхта длиной 11 метров
+                                        и вместимостью до 8 человек</p>
+                                    <ul class="rent__item-list">
+                                        <li class="rent__item-point">4 каюты</li>
+                                        <li class="rent__item-point">6 спальных мест</li>
+                                        <li class="rent__item-point">аудиосистема, кондиционер</li>
+                                        <li class="rent__item-point">холодильник, микроволновка</li>
+                                        <li class="rent__item-point">душ, туалет</li>
+                                    </ul>
+                                    <div class="rent__item-price">
+                                        <p class="rent__item-price--word">Цена:</p>
+                                        <p class="rent__item-price--time">18 000 ₽/час</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="video none1">
+                <div class="container">
+                    <div class="video__inner">
+                        <h1 class="video__title title">Почувствуйте атмосферу</h1>
+                        <div class="video__content">
+                            <a href="https://www.youtube.com/watch?v=kmwTUc9CFZw" data-youtubeLightbox
+                                class="video__play">
+                                <div class="video__play-box">
+                                    <img class="video__play-img" src="./images/video/video-img.jpg" alt="">
+
+                                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="30" cy="30" r="30" fill="#FDFDFF" />
+                                        <path d="M41 30L25 18V42L41 30Z" fill="#00C6BD" />
+                                    </svg>
+
+                                </div>
+                            </a>
+                            <img class="video__content-img" src="./images/video/img1.jpg" alt="">
+                            <img class="video__content-img" src="./images/video/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="company none1" id="company">
+                <div class="container">
+                    <div class="company__inner">
+                        <div class="company__content">
+                            <h1 class="company__title title">Кают-компания</h1>
+                            <p class="company__content-text">Наш клуб является партнером одного из лучших 5-звездочных
+                                отелей города,Hyatt Regency. Мы обеспечиваем лучшее обслуживание и сервис, чтобы сделать
+                                ваш отдых идеальным.</p>
+                            <img src="./images/company/content-img.jpg" class="company__content-img" alt="">
+                        </div>
+                        <ul class="company__adv">
+                            <li class="company__item">
+                                <img src="/images/company/item1.svg" class="company__item-img" alt="">
+                                <h2 class="company__item-title">Изысканная кухня</h2>
+                                <p class="company__item-text">Блюда средиземноморской кухни от лучших поваров</p>
+                            </li>
+                            <li class="company__item">
+                                <img src="/images/company/item2.svg" class="company__item-img" alt="">
+                                <h2 class="company__item-title">Фирменные напитки</h2>
+                                <p class="company__item-text">Огромный выбор вкуснейших освежающих коктейлей</p>
+                            </li>
+                            <li class="company__item">
+                                <img src="/images/company/item3.svg" class="company__item-img" alt="">
+                                <h2 class="company__item-title">Полный комфорт</h2>
+                                <p class="company__item-text">Большие ортопедические двуспальные кровати</p>
+                            </li>
+                            <li class="company__item">
+                                <img src="/images/company/item4.svg" class="company__item-img" alt="">
+                                <h2 class="company__item-title">Помощь во всем</h2>
+                                <p class="company__item-text">Выполним любую просьбу
+                                    и сделаем все, что захотите</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="news none1">
+                <div class="container">
+                    <div class="news__title title">Новости</div>
+                    <div class="news__inner">
+                        <a href="#" class="news__big">
+                            <img src="./images/news/photo.jpg" class="news__big-img" alt="">
+                            <div class="news__big-content">
+                                <p class="news__big-subtitle">Победитель регаты шкипер Иван Кулешов</p>
+                                <h2 class="news__big-title">Итоги регаты Sochi Race Week 2020</h2>
+                                <p class="news_big-text">Свыше сотни участников собирались на побережье Сочи, чтобы
+                                    посоревноваться за главный приз. В соревнованиях приняли участие как новички, так и
+                                    моряки, имеющие за плечами немалый опыт.
+                                </p>
+                                <div class="news__big-bot">
+                                    <div class="news__big-avtor">
+                                        <img src="./images/news/avto1.jpg" class="news__big-avtor--img" alt="">
+                                        <div class="news__big-avtor--info">
+                                            <p class="news__big-info--name">Артем Колесников</p>
+                                            <p class="news__big-info--date">20.06.2020</p>
+                                        </div>
+                                    </div>
+                                    <img src="./images/news/link.svg" class="news__big-avtor-link" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="news__small">
+                            <img src="./images/news/photo2.jpg" class="news__small-img" alt="">
+                            <div class="news__small-content">
+                                <p class="news__small-subtitle">Участник выставки – яхта Golsling 3.15</p>
+                                <h2 class="news__small-title">Выставка Sochi Boat Show</h2>
+                                <p class="news__small-text">Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29
+                                    июля
+                                    2020 года в нашем яхт-клубе. В программе будет ...</p>
+                                <div class="news__small-bot">
+                                    <div class="news__small-avtor">
+                                        <img src="./images/news/avto2.jpg" class="news__small-avtor--img" alt="">
+                                        <div class="news__small-avtor--info">
+                                            <p class="news__small-info--name">Денис Иванов</p>
+                                            <p class="news__small-info--date">15.06.2020</p>
+                                        </div>
+                                    </div>
+                                    <img src="./images/news/link.svg" class="news__small-avtor-link" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="news__small">
+                            <img src="./images/news/photo2.jpg" class="news__small-img" alt="">
+                            <div class="news__small-content">
+                                <p class="news__small-subtitle">Участник выставки – яхта Golsling 3.15</p>
+                                <h2 class="news__small-title">Выставка Sochi Boat Show</h2>
+                                <p class="news__small-text">Выставка катеров и яхт Sochi Boat Show состоится с 19 по 29
+                                    июля
+                                    2020 года в нашем яхт-клубе. В программе будет ...</p>
+                                <div class="news__small-bot">
+                                    <div class="news__small-avtor">
+                                        <img src="./images/news/avto2.jpg" class="news__small-avtor--img" alt="">
+                                        <div class="news__small-avtor--info">
+                                            <p class="news__small-info--name">Денис Иванов</p>
+                                            <p class="news__small-info--date">15.06.2020</p>
+                                        </div>
+                                    </div>
+                                    <img src="./images/news/link.svg" class="news__small-avtor-link" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="calendar none1">
+                <div class="container">
+                    <h1 class="calendar__title title">Календарь соревнований, январь 2021</h1>
+                    <div class="calendar__scroll">
+                        <table class="calendar__table">
+                            <tr class="calendar__table-title">
+                                <th>Название соревнования</th>
+                                <th>Даты проведения</th>
+                                <th>Участвующие классы</th>
+                                <th>Категория</th>
+                                <th>Место проведения</th>
+                            </tr>
+                            <tr class="calendar__table-data bg-grey">
+                                <td>Кубок Сибири</td>
+                                <td>10-15 января</td>
+                                <td>Буер Ледовый оптимист</td>
+                                <td>БУЕР</td>
+                                <td>г. Новосибирск</td>
+                            </tr>
+                            <tr class="calendar__table-data">
+                                <td>Черноморская регата</td>
+                                <td>12-18 января</td>
+                                <td>29-й, 420, 49-й FX, RS:X</td>
+                                <td>Гонки флота</td>
+                                <td>г. Сочи</td>
+                            </tr>
+                            <tr class="calendar__table-data bg-grey">
+                                <td>Первенство России</td>
+                                <td>19-23 января</td>
+                                <td>Кайтбординг курс-рейс</td>
+                                <td>Кайтбординг</td>
+                                <td>г. Тольятти</td>
+                            </tr>
+                            <tr class="calendar__table-data ">
+                                <td>Sailing League</td>
+                                <td>20-22 января</td>
+                                <td>J70</td>
+                                <td>Гонки флота</td>
+                                <td>г. Санкт-Петербург</td>
+                            </tr>
+                            <tr class="calendar__table-data bg-grey">
+                                <td>Первенство класса</td>
+                                <td>25-29 января</td>
+                                <td>РУЯ: M</td>
+                                <td>РУЯ</td>
+                                <td>г. Астрахань</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="sochi none1">
+                <div class="container">
+                    <div class="sochi__inner">
+                        <div class="sochi__content">
+                            <h1 class="sochi__title title">Станьте участником регаты
+                                Sochi Race Week 2021</h1>
+                            <p class="sochi__subtitle">Заполните форму ниже и мы свяжемся с вами в ближайшее время</p>
+                            <form class="sochi__form">
+                                <div class="sochi__form-info">
+                                    <label class="sochi__form-label">
+                                        Имя
+                                        <input type="text" class="sochi__form-input" placeholder="Сергей" required>
+                                    </label>
+                                    <label class="sochi__form-label">
+                                        Телефон
+                                        <input type="tel" data-tel-input class="sochi__form-input"
+                                            placeholder="+7 999 555 66 77" required>
+                                    </label>
+                                    <label class="sochi__form-label">
+                                        E-mail
+                                        <input type="email" class="sochi__form-input" placeholder="Example@mail.com"
+                                            required>
+                                    </label>
+                                </div>
+                                <label class="sochi__checkbox-label">
+                                    <div class="sochi__form-checkbox">
+                                        <input type="checkbox" class="sochi__form-default" required>
+                                        <span class="sochi__form-custom"></span>
+                                        Я даю согласие на обработку персональных данных
+                                    </div>
+                                </label>
+                                <button type="submit" class="sochi__form-btn">Отправить</button>
+                            </form>
+                        </div>
+                        <div class="sochi__img">
+                            <img src="./images/sochi/photo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contmap none1" id="contmap">
+                <div class="container">
+                    <div class="contmap__inner">
+                        <div class="contmap__map">
+                            <div class="map" id="map"></div>
+                        </div>
+                        <div class="contmap__content">
+                            <h1 class="contmap__title title">Контакты</h1>
+                            <div class="contmap__info">
+                                <div class="contmap__address">
+                                    <span>Адрес:</span> г. Сочи, ул. Бзугу, 9
+                                </div>
+                                <div class="contmap__tel">
+                                    <span>Телефон:</span> <a href="tel:+86220563" class="contmap__tel-link">8 (622)
+                                        62-05-63</a>
+                                </div>
+                                <div class="contmap__email">
+                                    <span>E-mail:</span> <a href="yachtclub-sochi@mail.ru:"
+                                        class="contmap__email-link">yachtclub-sochi@mail.ru
+                                    </a>
+                                </div>
+
+                                <h1 class="contmap__socials-title">Мы в социальных сетях:</h1>
+                                <div class="contmap__socials">
+                                    <a href="#" class="contmap__socials-item">
+                                        <img src="./images/contmap/facebook.svg" alt="">
+                                    </a>
+                                    <a href="#" class="contmap__socials-item">
+                                        <img src="./images/contmap/twitter.svg" alt="">
+                                    </a>
+                                    <a href="#" class="contmap__socials-item">
+                                        <img src="./images/contmap/instagram.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__img-box">
+                                <img class="footer__img-link" src="./images/footer/logotype.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                <span class="footer__item-subtitle">Политика конфиденциальности</span>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                <span class="footer__item-subtitle">Яхтклуб ©2020 Все права защищены</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#company" class="footer__item-link">
+                                <span class="footer__item-title">Компания</span>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#team" class="footer__item-link">
+                                Команда
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Галерея
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                <span class="footer__item-title">Яхт-клуб</span>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Правила
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Стоимость
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Анкета
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Партнеры
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                <span class="footer__item-title">Услуги</span>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#rent" class="footer__item-link">
+                                Аренда яхты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Свадьба на яхте
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                День рождения
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Бизнес-встречи
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Прогулки
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                <span class="footer__item-title">Регаты</span>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Корпоративные регаты
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Календарь мероприятий
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Стать участником
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Результаты регат
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">
+                                Обучение
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- YouTube LightBox -->
+        <div id="youtubelightbox" class="youtubelightbox">
+            <div class="youtubelightbox__centeredchild">
+                <div class="youtubelightbox__videowrapper">
+                    <div id="youtubelightboxPlayer"></div>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=f2f47d10-8414-4e5f-b8ba-b2004fcbb41a
+    &lang=ru_RU" type="text/javascript">
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script src="./libs/phoneMask/mask.js"></script>
+        <script src="./libs/phoneMask/mask_list.js"></script>
+        <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>

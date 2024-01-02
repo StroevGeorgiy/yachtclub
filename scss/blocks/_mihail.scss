@@ -1,0 +1,131 @@
+.mihail {
+    padding-bottom: 50px;
+}
+
+.mihail__inner {
+    display: flex;
+
+    @include media900 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+.mihail__biography {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    color: $bluew;
+    line-height: 140%;
+    margin-right: 100px;
+
+    @include media1200 {
+        padding-left: 70px;
+    }
+
+    @include media900 {
+        padding-left: 0px;
+        margin: 0;
+
+    }
+}
+
+.mihail__about {
+    line-height: 140%;
+    margin-bottom: 35px;
+
+    span {
+        font-size: 73px;
+        display: block;
+        float: left;
+        width: 55px;
+        height: 56px;
+        line-height: 68px;
+
+    }
+}
+
+.mihail__purpose {
+    margin-bottom: 10px;
+}
+
+.mihail__comment {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 35px;
+
+    @include media500 {
+        font-size: 20px;
+    }
+}
+
+.mihail__quest {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.mihail__first {
+    margin-bottom: 15px;
+
+    span {
+        background: rgba(0, 199, 189, .2);
+    }
+}
+
+.mihail__idea {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.michail__ask-link {
+    color: $aqua;
+}
+
+
+
+.mihail__articles {
+    row-gap: 18px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        width: 200px;
+        height: 1px;
+        background-color: rgba(229, 229, 229, 1);
+
+        @include media900 {
+            display: none;
+        }
+    }
+}
+
+.article__title {
+    position: relative;
+    margin-top: 22px;
+    font-size: 16px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 2px;
+        background: $aqua;
+        transform: translatey(-18px);
+    }
+
+}
+
+.article__link {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}

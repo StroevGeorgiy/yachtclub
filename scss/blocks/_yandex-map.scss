@@ -1,0 +1,37 @@
+[class*="copyrights-pane"] {
+	/* display: none !important; */
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.map:hover [class*="copyrights-pane"] {
+    opacity: 1;
+}
+
+/* Создать свою карту */
+[class*="gototech"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
+}
+
+
+/* Baloon */
+
+
+[class*="balloon__layout"], [class*="balloon__content"] {
+	background-color: $aqua !important;
+    color: #fff !important;
+}
+
+[class*="balloon__tail"]::after {
+	background-color: $aqua !important;
+}
+
+
+[class*="balloon_layout_panel"] {
+	background-color: $blueb !important;
+}
+

@@ -1,0 +1,96 @@
+.models {
+    padding-bottom: 40px;
+    line-height: 140%;
+    color: $bluew;
+
+}
+
+.model__inner {
+    display: flex;
+
+    @include media900 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+.model__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin-right: 100px;
+
+    @include media1200 {
+        padding-left: 70px;
+    }
+
+    @include media900 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.model__ask {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.model__text {
+    margin-bottom: 15px;
+}
+
+.model__about {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.model__list-title {
+    margin-bottom: 10px;
+}
+
+.model__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    margin-bottom: 20px;
+
+
+}
+
+.model__item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.model__praise {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.model__article {
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+        width: 200px;
+        height: 1px;
+        background-color: rgba(229, 229, 229, 1);
+    }
+}
+
+.model__article-link {
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 140%;
+    column-gap: 10px;
+
+}

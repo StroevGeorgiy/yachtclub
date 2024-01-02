@@ -1,0 +1,76 @@
+.ways {
+    padding-bottom: 80px;
+    font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; 
+color: $bluew;
+
+@include media900 {
+    padding-bottom: 60px;
+}
+}
+
+.ways__inner {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        width: 1170px;
+        height: 1px;
+        background-color: $blueb;
+        opacity: .1;
+    }
+}
+
+.ways__services {
+    padding: 20px 0;
+    display: flex;
+    column-gap: 15px;
+
+    
+
+    @include media500 {
+        justify-content: center;
+    }
+}
+
+
+.ways__socials {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    column-gap: 15px;
+
+    
+    @include media500 {
+        justify-content: center;
+    }
+}
+
+.ways__services-box {
+    display: flex;
+    padding: 10px 12px;
+    border: 1px solid $aqua;
+
+    &:hover {
+        background: $aqua;
+        color: #fff;
+    }
+
+    @include media500 {
+        padding: 7px 9px;
+    }
+    
+}
+
+
+.ways__socials-title {
+
+}
+
+.ways__socials-item {
+    &:hover {
+        transform: scale(1.1);
+    }
+}
